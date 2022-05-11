@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sudokusolver.Controller">
+   <children>
+      <GridPane fx:id="sudokuGrid" layoutX="30.0" layoutY="92.0" prefHeight="465.0" prefWidth="443.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="2" fx:id="x2_y0">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" fx:id="x0_y0">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="1" fx:id="x1_y0">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="3" fx:id="x3_y0">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="4" fx:id="x4_y0">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="5" fx:id="x5_y0">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="6" fx:id="x6_y0">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="7" fx:id="x7_y0">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="8" fx:id="x8_y0">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.rowIndex="1" fx:id="x0_y1">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="x2_y1">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="3" GridPane.rowIndex="1" fx:id="x3_y1">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="4" GridPane.rowIndex="1" fx:id="x4_y1">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="5" GridPane.rowIndex="1" fx:id="x5_y1">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="6" GridPane.rowIndex="1" fx:id="x6_y1">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="7" GridPane.rowIndex="1" fx:id="x7_y1">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="8" GridPane.rowIndex="1" fx:id="x8_y1">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.rowIndex="2" fx:id="x0_y2">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" fx:id="x1_y2">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="x2_y2">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.rowIndex="3" fx:id="x0_y3">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4" fx:id="x1_y4">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" fx:id="x1_y3">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.rowIndex="4" fx:id="x0_y4">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.rowIndex="5" fx:id="x0_y5">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" fx:id="x1_y5">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.rowIndex="6" fx:id="x0_y6">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="6" fx:id="x1_y6">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.rowIndex="7" fx:id="x0_y7">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="7" fx:id="x1_y7">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.rowIndex="8" fx:id="x0_y8">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="3" GridPane.rowIndex="2" fx:id="x3_y2">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="2" GridPane.rowIndex="3" fx:id="x2_y3">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="3" GridPane.rowIndex="3" fx:id="x3_y3">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="4" GridPane.rowIndex="2" fx:id="x4_y2">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="5" GridPane.rowIndex="2" fx:id="x5_y2">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="6" GridPane.rowIndex="2" fx:id="x6_y2">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="7" GridPane.rowIndex="2" fx:id="x7_y2">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="8" GridPane.rowIndex="2" fx:id="x8_y2">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="4" GridPane.rowIndex="3" fx:id="x4_y3">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="5" GridPane.rowIndex="3" fx:id="x5_y3">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="6" GridPane.rowIndex="3" fx:id="x6_y3">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="7" GridPane.rowIndex="3" fx:id="x7_y3">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="8" GridPane.rowIndex="3" fx:id="x8_y3">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="2" GridPane.rowIndex="4" fx:id="x2_y4">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="3" GridPane.rowIndex="4" fx:id="x3_y4">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="4" GridPane.rowIndex="4" fx:id="x4_y4">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="5" GridPane.rowIndex="4" fx:id="x5_y4">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="6" GridPane.rowIndex="4" fx:id="x6_y4">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="7" GridPane.rowIndex="4" fx:id="x7_y4">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="8" GridPane.rowIndex="4" fx:id="x8_y4">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="2" GridPane.rowIndex="5" fx:id="x2_y5">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="3" GridPane.rowIndex="5" fx:id="x3_y5">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="4" GridPane.rowIndex="5" fx:id="x4_y5">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="5" GridPane.rowIndex="5" fx:id="x5_y5">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="6" GridPane.rowIndex="5" fx:id="x6_y5">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="7" GridPane.rowIndex="5" fx:id="x7_y5">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="8" GridPane.rowIndex="5" fx:id="x8_y5">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="2" GridPane.rowIndex="6" fx:id="x2_y6">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="3" GridPane.rowIndex="6" fx:id="x3_y6">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="4" GridPane.rowIndex="6" fx:id="x4_y6">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="5" GridPane.rowIndex="6" fx:id="x5_y6">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="6" GridPane.rowIndex="6" fx:id="x6_y6">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="7" GridPane.rowIndex="6" fx:id="x7_y6">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="8" GridPane.rowIndex="6" fx:id="x8_y6">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="2" GridPane.rowIndex="7" fx:id="x2_y7">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="3" GridPane.rowIndex="7" fx:id="x3_y7">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="4" GridPane.rowIndex="7" fx:id="x4_y7">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="5" GridPane.rowIndex="7" fx:id="x5_y7">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="6" GridPane.rowIndex="7" fx:id="x6_y7">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="7" GridPane.rowIndex="7" fx:id="x7_y7">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="8" GridPane.rowIndex="7" fx:id="x8_y7">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="8" fx:id="x1_y8">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="2" GridPane.rowIndex="8" fx:id="x2_y8">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="3" GridPane.rowIndex="8" fx:id="x3_y8">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="4" GridPane.rowIndex="8" fx:id="x4_y8">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="5" GridPane.rowIndex="8" fx:id="x5_y8">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="6" GridPane.rowIndex="8" fx:id="x6_y8">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="7" GridPane.rowIndex="8" fx:id="x7_y8">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="8" GridPane.rowIndex="8" fx:id="x8_y8">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+            <TextArea accessibleRole="TEXT_FIELD" opacity="0.57" prefHeight="200.0" prefWidth="200.0" styleClass="sudokuBox" stylesheets="@styles.css" text="0" GridPane.columnIndex="1" GridPane.rowIndex="1" fx:id="x1_y1">
+               <font>
+                  <Font name="Al Bayan Plain" size="16.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextArea>
+         </children>
+      </GridPane>
+      <ButtonBar layoutX="5.0" layoutY="14.0" prefHeight="43.0" prefWidth="364.0">
+        <buttons>
+            <Button fx:id="restart123" mnemonicParsing="false" onAction="#restartButton" text="Restart" />
+          <Button mnemonicParsing="false" onAction="#solveButton" text="Solve" />
+            <Button mnemonicParsing="false" onAction="#getBoardButton" text="GetBoard" />
+        </buttons>
+      </ButtonBar>
+      <Line endX="-2.0000152587890625" endY="8.0" layoutX="179.0" layoutY="84.0" startX="-2.0000152587890625" startY="469.910400390625" strokeWidth="3.0" />
+      <Line endX="-4.000030517578125" layoutX="328.0" layoutY="92.0" startX="-4.000030517578125" startY="461.910400390625" strokeWidth="3.0" />
+      <Line endX="462.585693359375" endY="-5.865875244140625" layoutX="9.0" layoutY="253.0" startX="23.121337890625" startY="-5.865875244140625" strokeWidth="3.0" />
+      <Line endX="456.96441650390625" endY="-5.989349365234375" layoutX="14.0" layoutY="409.0" startX="17.50000762939453" startY="-5.989349365234375" strokeWidth="3.0" />
+      <Line endX="1.000009536743164" endY="9.0" layoutX="29.0" layoutY="83.0" startX="1.000009536743164" startY="474.0" strokeWidth="3.0" />
+      <Line endX="397.96435546875" endY="23.0" layoutX="73.0" layoutY="69.0" startX="-42.99999237060547" startY="23.0" strokeWidth="3.0" />
+      <Line endX="-12.914306640625" endY="-71.0" layoutX="486.0" layoutY="163.0" startX="-11.0" startY="391.30096435546875" strokeWidth="3.0" />
+      <Line endX="392.585693359375" endY="-20.589599609375" layoutX="79.0" layoutY="576.0" startX="-46.878662109375" startY="-20.589599609375" strokeWidth="3.0" />
+      <Label fx:id="timeLabel" layoutX="381.0" layoutY="27.0" prefHeight="17.0" prefWidth="90.0" />
+      <Label fx:id="katseteLabel" layoutX="209.0" layoutY="57.0" prefHeight="17.0" prefWidth="99.0" />
+   </children>
+</AnchorPane>

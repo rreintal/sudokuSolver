@@ -1,0 +1,7 @@
+.boardButton {
+    -fx-font-size: 15px;
+    -fx-background-color: black;}
+
+.sudokuBox{
+    -fx-text-fill: black;
+    -fx-background-color: transparent, white, transparent, white;}
